@@ -1,0 +1,89 @@
+///////////////////////////////////////////////////
+///        INCLUDED THIRD-PARTY VENDORS         ///
+///////////////////////////////////////////////////
+
+// Include NioIcon 
+@import "nioicon/nioicon";
+
+//FontAwesome Icons
+// $fa-font-path: "../fonts";
+// @import "fontawesome/fontawesome.scss";
+// @import "fontawesome/brands.scss";
+// @import "fontawesome/regular.scss";
+// @import "fontawesome/solid.scss";
+
+//Themify Icons
+// $ti-font-path : "../fonts";
+// @import "themify-icons/themify-icons";
+
+//Bootstrap Icons
+// $bi-font-path : "../fonts";
+// @import "bootstrap-icons/bootstrap-icons";
+
+// Include Prettify 
+@import "prettify";
+
+// Include React Beautiful dnd
+@import "dnd";
+
+// Include Simplebar
+@import "simplebar";
+.simplebar-scroll-content {
+	@extend .simplebar-content-wrapper;
+}
+
+// Include Slick
+@import "slick/slick";
+
+// Include dropzone
+@import "dropzone/dropzone";
+
+@import "datatable/datatable";
+
+// Include React datatable
+@import "react-datatable/react-datatable";
+
+// Include SweetAlert2
+@import "sweetalert2/sweetalert2";
+
+// Include Quill
+@import "quill/quill";
+
+// Include Tinymce
+@import "tinymce/base";
+
+// Include tagify
+@import "tagify";
+
+// Include fullcalendar
+@import "fullcalendar";
+
+// Include nouiSlider
+@import "nouislider/nouislider";
+
+// Include Magnific Popup
+@import "magnific-popup/main";
+
+// Include React Select
+@import "react-select/react-select";
+
+// Include React modal video
+@import "react-modal-video/react-modal-video";
+
+// Include React Toastify
+@import "react-toastify/react-toastify";
+
+// Include React Datepicker
+@import "react-datepicker/react-datepicker";
+
+// Include jvector map
+@import "jvector-map/jvector";
+
+// Include jsTree
+@import "jsTree/jsTree";
+
+//dual-listbox
+@import "dual-listbox/dual-listbox";
+
+// Include kanban
+@import "kanban";
