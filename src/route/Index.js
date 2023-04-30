@@ -113,18 +113,18 @@ const Pages = () => {
     <Suspense fallback={<div />}>
       <Switch>
         {/*Dashboards*/}
-        <Route exact path={`${process.env.PUBLIC_URL}/crypto`} component={Crypto}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/sales`} component={Sales}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/analytic`} component={Analytics}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/ecommerce`} component={EcommerceDashboard}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/_blank`} component={Blank}></Route>
+        <Route exact path={`/crypto`} component={Crypto}></Route>
+        <Route exact path={`/sales`} component={Sales}></Route>
+        <Route exact path={`/analytic`} component={Analytics}></Route>
+        <Route exact path={`/ecommerce`} component={EcommerceDashboard}></Route>
+        <Route exact path={`/_blank`} component={Blank}></Route>
 
         {/*Pre-built Pages*/}
-        <Route exact path={`${process.env.PUBLIC_URL}/project-card`} component={ProjectCardPage}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/project-list`} component={ProjectListPage}></Route>
+        <Route exact path={`/project-card`} component={ProjectCardPage}></Route>
+        <Route exact path={`/project-list`} component={ProjectListPage}></Route>
         <Route //Context Api added
           exact
-          path={`${process.env.PUBLIC_URL}/user-list-regular`}
+          path={`/user-list-regular`}
           render={() => (
             <UserContextProvider>
               <UserListRegularPage />
@@ -133,7 +133,7 @@ const Pages = () => {
         ></Route>
         <Route //Context Api added
           exact
-          path={`${process.env.PUBLIC_URL}/user-list-compact`}
+          path={`/user-list-compact`}
           render={() => (
             <UserContextProvider>
               <UserListCompact />
@@ -142,43 +142,43 @@ const Pages = () => {
         ></Route>
         <Route //Context Api added
           exact
-          path={`${process.env.PUBLIC_URL}/user-details-regular/:id`}
+          path={`/user-details-regular/:id`}
           render={(props) => (
             <UserContextProvider>
               <UserDetailsPage {...props} />
             </UserContextProvider>
           )}
         ></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/user-profile-regular/`} component={UserProfileLayout}></Route>
+        <Route exact path={`/user-profile-regular/`} component={UserProfileLayout}></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/user-profile-notification/`}
+          path={`/user-profile-notification/`}
           component={UserProfileLayout}
         ></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/user-profile-activity/`} component={UserProfileLayout}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/user-profile-setting/`} component={UserProfileLayout}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/user-profile-social/`} component={UserProfileLayout}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/user-profile-password/`} component={UserProfileLayout}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/user-profile-package/`} component={UserProfileLayout}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/user-profile/`} component={UserProfileLayout}></Route>
+        <Route exact path={`/user-profile-activity/`} component={UserProfileLayout}></Route>
+        <Route exact path={`/user-profile-setting/`} component={UserProfileLayout}></Route>
+        <Route exact path={`/user-profile-social/`} component={UserProfileLayout}></Route>
+        <Route exact path={`/user-profile-password/`} component={UserProfileLayout}></Route>
+        <Route exact path={`/user-profile-package/`} component={UserProfileLayout}></Route>
+        <Route exact path={`/user-profile/`} component={UserProfileLayout}></Route>
         <Route //Context api added
           exact
-          path={`${process.env.PUBLIC_URL}/user-contact-card`}
+          path={`/user-contact-card`}
           render={() => (
             <UserContextProvider>
               <UserContactCardPage />
             </UserContextProvider>
           )}
         ></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/kyc-list-regular`} component={KycListRegular}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/kyc-details-regular/:id`} component={KycDetailsRegular}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/transaction-basic`} component={TransListBasic}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/transaction-crypto`} component={TransListCrypto}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/product-list`} component={ProductList}></Route>
+        <Route exact path={`/kyc-list-regular`} component={KycListRegular}></Route>
+        <Route exact path={`/kyc-details-regular/:id`} component={KycDetailsRegular}></Route>
+        <Route exact path={`/transaction-basic`} component={TransListBasic}></Route>
+        <Route exact path={`/transaction-crypto`} component={TransListCrypto}></Route>
+        <Route exact path={`/product-list`} component={ProductList}></Route>
 
         <Route // context api added
           exact
-          path={`${process.env.PUBLIC_URL}/product-card`}
+          path={`/product-card`}
           render={(props) => (
             <ProductContextProvider>
               <ProductCard />
@@ -187,33 +187,33 @@ const Pages = () => {
         ></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/product-details/:id`}
+          path={`/product-details/:id`}
           render={(props) => (
             <ProductContextProvider>
               <ProductDetails {...props} />
             </ProductContextProvider>
           )}
         ></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/invoice-list`} component={InvoiceList}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/invoice-details/:id`} component={InvoiceDetails}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/pricing-table`} component={PricingTable}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/image-gallery`} component={GalleryPreview}></Route>
+        <Route exact path={`/invoice-list`} component={InvoiceList}></Route>
+        <Route exact path={`/invoice-details/:id`} component={InvoiceDetails}></Route>
+        <Route exact path={`/pricing-table`} component={PricingTable}></Route>
+        <Route exact path={`/image-gallery`} component={GalleryPreview}></Route>
 
         {/*Demo Pages*/}
-        <Route exact path={`${process.env.PUBLIC_URL}/pages/terms-policy`} component={Terms}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/pages/faq`} component={Faq}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/pages/regular-v1`} component={Regularv1}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/pages/regular-v2`} component={Regularv2}></Route>
+        <Route exact path={`/pages/terms-policy`} component={Terms}></Route>
+        <Route exact path={`/pages/faq`} component={Faq}></Route>
+        <Route exact path={`/pages/regular-v1`} component={Regularv1}></Route>
+        <Route exact path={`/pages/regular-v2`} component={Regularv2}></Route>
 
         {/*Application*/}
-        <Route exact path={`${process.env.PUBLIC_URL}/app-messages`} component={AppMessages}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/app-chat`} component={Chat}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/app-calender`} component={Calender}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/app-kanban`} component={Kanban}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/app-inbox`} component={Inbox}></Route>
+        <Route exact path={`/app-messages`} component={AppMessages}></Route>
+        <Route exact path={`/app-chat`} component={Chat}></Route>
+        <Route exact path={`/app-calender`} component={Calender}></Route>
+        <Route exact path={`/app-kanban`} component={Kanban}></Route>
+        <Route exact path={`/app-inbox`} component={Inbox}></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/app-file-manager`}
+          path={`/app-file-manager`}
           render={(props) => (
             <FileManagerContextProvider>
               <FileManager />
@@ -222,7 +222,7 @@ const Pages = () => {
         ></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/app-file-manager/files`}
+          path={`/app-file-manager/files`}
           render={(props) => (
             <FileManagerContextProvider>
               <FileManager />
@@ -231,7 +231,7 @@ const Pages = () => {
         ></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/app-file-manager/shared`}
+          path={`/app-file-manager/shared`}
           render={(props) => (
             <FileManagerContextProvider>
               <FileManager />
@@ -240,7 +240,7 @@ const Pages = () => {
         ></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/app-file-manager/starred`}
+          path={`/app-file-manager/starred`}
           render={(props) => (
             <FileManagerContextProvider>
               <FileManager />
@@ -249,7 +249,7 @@ const Pages = () => {
         ></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/app-file-manager/recovery`}
+          path={`/app-file-manager/recovery`}
           render={(props) => (
             <FileManagerContextProvider>
               <FileManager />
@@ -258,7 +258,7 @@ const Pages = () => {
         ></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/app-file-manager/settings`}
+          path={`/app-file-manager/settings`}
           render={(props) => (
             <FileManagerContextProvider>
               <FileManager />
@@ -267,7 +267,7 @@ const Pages = () => {
         ></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/app-file-manager/pricing`}
+          path={`/app-file-manager/pricing`}
           render={(props) => (
             <FileManagerContextProvider>
               <FileManager />
@@ -276,7 +276,7 @@ const Pages = () => {
         ></Route>
         <Route
           exact
-          path={`${process.env.PUBLIC_URL}/app-file-manager/folder/:id`}
+          path={`/app-file-manager/folder/:id`}
           render={(props) => (
             <FileManagerContextProvider>
               <FileManager />

@@ -2,7 +2,7 @@ const menu = [
   {
     icon: "dashboard",
     text: "Dashboard",
-    link: "",
+    link: "/dashboard",
   },
   
   {
@@ -29,11 +29,11 @@ const menu = [
     text: "Ecommerce",
     active: false,
     subMenu: [
-      // {
-      //   text: "Products",
-      //   icon: "card-view",
-      //   active: false,
-      //   subMenu: [
+      {
+        text: "Products",
+        icon: "card-view",
+        active: false,
+        subMenu: [
           {
             text: "Product List",
             link: "/product-list",
@@ -46,13 +46,13 @@ const menu = [
             text: "Product Details",
             link: "/product-details/0",
           },
-      //   ],
-      // },
-      // {
-      //   text: "Invoice",
-      //   icon: "file-docs",
-      //   active: false,
-      //   subMenu: [
+        ],
+      },
+      {
+        text: "Invoice",
+        icon: "file-docs",
+        active: false,
+        subMenu: [
           {
             text: "Invoice List",
             link: "/invoice-list",
@@ -61,8 +61,8 @@ const menu = [
             text: "Invoice Details",
             link: "/invoice-details/1",
           },
-      //   ],
-      // },
+        ],
+      },
     ],
   },
   {
