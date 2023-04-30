@@ -840,3 +840,42 @@ img {
   border-radius: 30px;
   height: 35px;
 }
+
+.footer-content{
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.nk-footer .widget-title::after {
+  background-color: #9194da;
+  content: "";
+  display: block;
+  border-radius: 75px;
+  width: 10px;
+  height: 3px;
+}
+.bi-facebook::before { content: "\f30d"; }
+.widget-title{
+  display:inline-block;
+}
+
+.footer-title{
+  font-size: 14px;
+  color:#6a707a;
+}
+
+.footer-social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socials-icons{
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.footer-socials{
+  display: flex;
+  margin-top: 6px;
+}

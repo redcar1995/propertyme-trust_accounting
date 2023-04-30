@@ -8,6 +8,8 @@ import reportWebVitals from "./reportWebVitals";
 import { ApolloProvider } from "@apollo/client";
 import client from "./utils/apolloClient";
 
+// import "bootstrap/dist/css/bootstrap.css";
+
 const Error404Modern = lazy(() => import("./pages/error/404-modern"));
 
 ReactDOM.render(

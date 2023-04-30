@@ -111,7 +111,7 @@ const Login = () => {
                     type="text"
                     id="default-01"
                     name="name"
-                    ref={register({ required: "This field is required" })}
+                    // ref={w({ required: "This field is required" })}
                     defaultValue="info@softnio.com"
                     placeholder="Enter your email address or username"
                     className="form-control-lg form-control"
