@@ -8,7 +8,7 @@ import {Dropdown, DropdownItem,DropdownMenu,DropdownToggle} from 'reactstrap';
 const Header = ({ setVisibility }) => {
   const headerClass = classNames({
     "nk-header": true,
-    "nk-header-fixed":true
+    // "nk-header-fixed":true
   });
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -16,6 +16,17 @@ const Header = ({ setVisibility }) => {
     const toggle = () => setDropdownOpen((prevState) => !prevState);
     const brandtoggle = () => setbrandDropdownOpen((prevState) => !prevState);
  
+    window.addEventListener("scroll", function() {
+      var topbar = document.getElementsByClassName("nk-header")[0];
+      var scrolled = window.scrollY > 0;
+      if (scrolled) {
+        topbar.classList.add("scrolled");
+      } else {
+        topbar.classList.remove("scrolled");
+      }
+    });
+    
+    
   return (
     <div className={headerClass}>
       <div className="container-fluid">
@@ -58,7 +69,7 @@ const Header = ({ setVisibility }) => {
                   type="text"
                   placeholder="Search anything"
                 />
-                <Icon name="search" className="m-auto" />
+                <Icon name="search" className="m-auto" id="search" />
               </li>
               <li className="nav-item" onClick={() => setVisibility(false)}>
                 <Link className="nav-link" to="/features">Features</Link> 
